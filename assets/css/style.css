@@ -71,7 +71,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%;
+    width: 100%;
 }
 
 .product-citycar ul {
@@ -80,6 +80,10 @@ main{
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+.product-citycar ul li{
+    list-style: none;
 }
 
 .img-citycar{
@@ -117,6 +121,7 @@ footer{
                             'footer footer footer';
         font-family: 'IBM Plex Sans', sans-serif;
         box-sizing: border-box;
+        grid-template-columns: 2fr 3fr 1fr;
     }
     .derechos-marca{
         display: flex;
@@ -146,5 +151,44 @@ footer{
 
     nav a:hover{
         text-decoration: underline;
+    }
+
+    .product-citycar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .product-citycar ul li{
+        list-style: none;
+    }
+}
+
+@media (min-width: 720px){
+
+    .product-citycar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+    }
+
+    .product-citycar ul li{
+        list-style: none;
+    }
+}
+
+@media (min-width: 960px){
+
+    .product-citycar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: calc(100%/3);
+    }
+
+    .product-citycar ul li{
+        list-style: none;
     }
 }
